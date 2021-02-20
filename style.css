@@ -1,0 +1,10 @@
+/* 文字を中央寄せ */
+body {
+    text-align: center;
+}
+
+/*タイトルを回転 ・中央寄せ*/
+.style {
+    transform: scale(-1, 1);
+    text-align: center;
+}
