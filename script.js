@@ -1,4 +1,5 @@
 async function getMikuji() {
+    document.getElementById("implementation").disabled = true;
 
     var syori1 = document.getElementById("unsei");
     syori1.innerHTML = "<p>おみくじを引いてます</p>";
@@ -8,4 +9,5 @@ async function getMikuji() {
     console.log(kekka.message)
     var kuji = document.getElementById('unsei') 
     kuji.innerHTML = "<p>あなたの運勢は" + kekka.message +　"です</p>"
+    document.getElementById("implementation").disabled = false;
 }
