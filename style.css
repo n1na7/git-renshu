@@ -8,3 +8,15 @@ body {
     transform: scale(-1, 1);
     text-align: center;
 }
+
+/* 回転する桃 */
+.momo {
+    width: 30px;
+    height: auto;
+    animation: r3 1s linear infinite alternate;
+  }
+   
+  @keyframes r3 {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(300deg); }
+  }

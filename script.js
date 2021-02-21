@@ -2,7 +2,7 @@ async function getMikuji() {
     document.getElementById("implementation").disabled = true;
 
     var syori1 = document.getElementById("unsei");
-    syori1.innerHTML = "<p>おみくじを引いてます</p>";
+    syori1.innerHTML = "<img class='momo' src='./fruit_peach.png' alt='peach'>　 <p>おみくじを引いてます</p>";
 
     var omikuji = await fetch("https://script.google.com/macros/s/AKfycbwAnFJ18tFZ6_CCK1Pc9rmk2Zczr1hKhy8Oee4-3_ZbKZOvSg/exec");
     var kekka = await omikuji.json()
